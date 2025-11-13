@@ -5,7 +5,7 @@ function decimalToBinary(num) {
 		num=Math.floor(num/2);
 	}
 
-	return  ans;
+	return  ans||"0";
 }
 const num = parseInt(prompt("Enter a number."));
 alert(decimalToBinary(num)); 
