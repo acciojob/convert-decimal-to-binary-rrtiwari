@@ -4,8 +4,8 @@ function decimalToBinary(num) {
 		ans=ans+num%2;
 		num=Math.floor(num/2);
 	}
-
-	return  ans||"0";
+    const reversed = ans.split('').reverse().join('');
+	return  reversed || "0";
 }
 const num = parseInt(prompt("Enter a number."));
 alert(decimalToBinary(num)); 
